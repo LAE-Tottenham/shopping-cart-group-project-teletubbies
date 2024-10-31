@@ -1,10 +1,21 @@
-from currency_exchange_tool import currency_convert
-from shop_functions import start_shop
+import time
+import greeting
 
-print('Welcome to my shop')
+wel1 = greeting.welcome()
+wel2 = greeting.dots()
+wel3 = greeting.title()
+wel4 = greeting.listofoptions()
+end = greeting.exit()
 
-while True:
-    print('Please select what you would like to buy')
-    items_to_buy = start_shop()
+print(wel1)
+time.sleep(2)
+print(wel2)
+time.sleep(2)
+print(wel3)
+time.sleep(2)
+print(wel4)
+time.sleep(2)
 
-    # blah blah 
+import cart_func
+
+print(end)
